@@ -11,7 +11,7 @@
     "lint": "eslint -c .eslintrc.js --ext .ts src",
     "build": "pika build && yarn compress",
     "compress": "terser pkg/dist-web/index.js -o pkg/dist-web/index.min.js --source-map --mangle --compress passes=2 --toplevel --mangle-props regex=/_$/ && gzip-size pkg/dist-web/index.min.js",
-    "test": "jest --runInBand",
+    "test": "jest --runInBand --passWithNoTests",
     "version": "yarn run build",
     "coverage": "jest --runInBand --coverage --coverageDirectory '../coverage'",
     "commit": "git-cz",

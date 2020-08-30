@@ -1,0 +1,26 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ["12", "10", "8"]
+    name: Node ${{ matrix.node }}
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - run: yarn install --ignore-engines
+      - run: yarn test
+      - run: yarn build
+      - name: Code Climate Coverage Action
+        uses: paambaati/codeclimate-action@v2.2.1
+        env:
+          CC_TEST_REPORTER_ID: fa299f025c9832450aca46724ea25b2b3741f08857775becadeb3c2f71d4cf18
+        with:
+          coverageCommand: yarn coverage

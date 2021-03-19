@@ -91,7 +91,7 @@
     "express": "^4.17.1",
     "he": "^1.2.0",
     "lodash": "^4.17.21",
-    "qs": "^6.9.6"
+    "qs": "^6.10.0"
   },
   "peerDependencies": {},
   "config": {

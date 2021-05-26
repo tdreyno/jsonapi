@@ -9,6 +9,6 @@ updates:
     schedule:
       interval: monthly
   ignore:
-  - dependency-name: jest
+  - dependency-name: gzip-size-cli
     versions:
-    - ">= 26.a, < 27"
+    - ">= 5.0"

@@ -68,7 +68,7 @@
     "@types/jest": "^26.0.24",
     "@types/express": "^4.17.13",
     "@types/he": "^1.1.2",
-    "@types/lodash": "^4.14.171",
+    "@types/lodash": "^4.14.172",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
     "@typescript-eslint/parser": "^4.29.0",
     "commitizen": "^4.2.4",

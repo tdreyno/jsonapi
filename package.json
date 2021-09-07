@@ -70,7 +70,7 @@
     "@types/he": "^1.1.2",
     "@types/lodash": "^4.14.172",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
-    "@typescript-eslint/parser": "^4.30.0",
+    "@typescript-eslint/parser": "^4.31.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.32.0",
